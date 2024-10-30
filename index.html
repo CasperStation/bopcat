@@ -5,11 +5,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bopcat Memecoin - Launching on Base Chain!">
-  <title>Bopcat Coin - Meme of the Base Chain</title>
+  <meta name="description" content="Bopcat Memecoin - Launching on Sui Chain!">
+  <title>Bopcat Coin - Meme of the Sui Chain</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="css/css2.css" rel="stylesheet">
+  <link rel="icon" href="./images/bopheadclose.png" type="image/png">
+
   <style>
     * {
       box-sizing: border-box;
@@ -18,7 +20,7 @@
     }
 
     body {
-      background-color: #1a21a5;
+      background-color: #49b0ff;
       font-family: 'Roboto', sans-serif;
       text-align: center;
       color: white;
@@ -313,12 +315,14 @@
   </style>
 </head>
 
+
 <body>
   <img src="images/flippedopenhead.png" alt="Bopcat Logo" class="logo">
 
   <div class="social-links">
-    <a href="https://x.com/BopCatOnBase" target="_blank">Twitter 🐦</a>
-    <a href="https://dexscreener.com/base/0xDF66508F76F97608DA6AE1b14c86eb3cB7b00ab4" target="_blank">Chart📊</a>
+    <a href="https://t.me/BopCat_Sui" target="_blank">TG 🛩️</a>
+    <a href="https://x.com/BopCat_Sui" target="_blank">Twitter 🐦</a>
+    <a href="https://dexscreener.com" target="_blank">Chart📊</a>
   </div>
 
   <div class="emoji-container"></div>
@@ -326,7 +330,7 @@
   <div class="container">
     <header>
       <h1>Bopcat</h1>
-      <p>The memecoin you didn't know you needed On Base!</p>
+      <p>The memecoin you didn't know you needed On Sui!</p>
     </header>
 
     <div class="cat-container">
@@ -334,14 +338,15 @@
       <p class="counter" id="clickCount">Bops: 0</p>
     </div>
 
-    
-    <button class="buy-button" onclick="window.open('https://app.uniswap.org/swap?outputCurrency=0xDF66508F76F97608DA6AE1b14c86eb3cB7b00ab4', '_blank')">Buy Bopcat</button>
-    <div class="contract-address">CA: 0xDF66508F76F97608DA6AE1b14c86eb3cB7b00ab4</div>
+
+    <button class="buy-button" onclick="window.open('https://movepump.com/token/TBA', '_blank')">Buy
+      Bopcat</button>
+    <div class="contract-address">CA: TBA</div>
   </div>
 
   <script>
     let clickCount = 0;
-    const emojiImages = ['image/bopclose.png', 'image/bopheadclose.png', 'image/bopheadopen.png', 'image/bopopen.png'];
+    const emojiImages = ['images/bopclose.png', 'images/bopheadclose.png', 'images/bopheadopen.png', 'images/bopopen.png'];
     const emojiContainer = document.querySelector('.emoji-container');
 
     function popcatClick() {
@@ -354,9 +359,9 @@
       createEmojiWave();
 
       const img = document.getElementById('popcat');
-      img.src = 'image/flippedopen.png';
+      // img.src = 'images/flippedopen.png';
       setTimeout(() => {
-        img.src = 'image/flippedclose.png';
+        img.src = 'images/flippedclose.png';
       }, 100);
     }
 
@@ -400,7 +405,3 @@
 </body>
 
 </html>
-
-
-
-
